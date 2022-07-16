@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://www.naver.com/ -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          
+          <meta http-equiv="imagetoolbar" content="no">
+          <meta http-equiv="imagetoolbar" content="false">
+          <meta name="ROBOTS" content="NOINDEX">
+          <meta name="ROBOTS" content="NOFOLLOW">
+          <meta name="ROBOTS" content="NOARCHIVE">
+          <meta name="ROBOTS" content="NOSNIPPET">
+          <meta name="ROBOTS" content="NOODP">
+          <!--<base target="_top">--><base href="." target="_top">
+          <title>광고</title>
+          <script type="text/javascript">
+            window.onerror = function () { return true; };
+          </script>
+          <style type="text/css">
+            #sf_body {
+              min-width: 100%;
+              width: 1px;
+              margin: 0;
+              padding: 0;
+              background-color: transparent;
+              text-align: center;
+            }
+            #sf_body table {
+              margin: auto;
+            }
+          </style>
+        <script type="text/javascript" src="./CSSPlugin.min.js.다운로드"></script><script type="text/javascript" src="./EasePack.min.js.다운로드"></script><script type="text/javascript" src="./TweenLite.min.js.다운로드"></script><script type="text/javascript" src="./timeboard_autoplay_750_flexunit.min.js.다운로드"></script></head>
+        <body id="sf_body" onload="initAd()">
+          <header></header>
+          <section id="content">
+          <div class="sf" id="sf_align">
+            <script src="./sf-ext.js.다운로드"></script>
+
+
+	
+	<title>NAVER</title>
+	<link rel="stylesheet" type="text/css" href="./new_timeboard.min.css">
+<script type="text/javascript" src="./pc.veta.core.min.js(1).다운로드"></script>
+<script type="text/javascript" src="./jquery-1.8.0.min.js(1).다운로드"></script>
+<script type="text/javascript">
+var autoplay;
+var enabledPlayer = false;
+var darkmode = false;
+
+var sdkBridge = new naver_corp_da.SdkBridge({
+	hostMetaChanged: function(hostMeta) {
+		darkmode = hostMeta.theme === 'dark';
+		loadPlayer();
+	}
+});
+
+function initAd() {
+	sdkBridge.init();
+
+	// ACK IMP
+	new Nimp(["https://siape.veta.naver.com/fxview?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831331&evtcd=P100&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&brs=Y&&eid=V800"]).log(1);
+}
+
+function loadPlayer() {
+	if (enabledPlayer) {
+		return;
+	}
+
+	enabledPlayer = true;
+
+	var sImageserver = "https://ssl.pstatic.net/tveta/libs";
+	
+	loadScripts([
+		sImageserver + "/external/js/CSSPlugin.min.js?20170106",
+		sImageserver + "/external/js/EasePack.min.js?20170106",
+		sImageserver + "/external/js/TweenLite.min.js?20170106",
+		sImageserver + "/assets/js/pc/main/min/timeboard_autoplay_750_flexunit.min.js?20211202"
+		], function() {
+			initPlayer();
+		});
+	
+	function loadScripts(urlArr, callback) {
+		var loadingCount = 0;
+		var resourceCnt = urlArr.length;
+
+		for(var i in urlArr) {
+			naver_corp_da.loadScript(urlArr[i], function() {
+				loadingCount++;
+				if(loadingCount === resourceCnt) callback();
+			});
+		}
+    }
+}
+
+function initPlayer() {
+	var info = {
+		adInfoImgSrc : "https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png",
+		creativeData : {
+			thumbVideoSrc : "https://tvetamovie.pstatic.net/libs/1383/1383636/c00e17da374ca99bce0c_20220512185623129.mp4-pBASE-v0-f165892-20220512185743758_1.mp4",
+			expansionVideoSrc : "https://tvetamovie.pstatic.net/libs/1383/1383636/5ba1e8d7cd7c3b4d55b0_20220512185606663.mp4-pHIGH-v0-f165891-20220512185741917_1.mp4",
+			altText : "[광고]오늘 한 키스로 미래를 본다면? 디즈니플러스 키스식스센스",
+		},
+		logData : {
+			bannerClick : "https://siape.veta.naver.com/fxclick?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831331&br=3863404&evtcd=P901&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&lu=&brs=Y&",
+			iconOverImp : "https://siape.veta.naver.com/fxclick?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831331&br=3863405&evtcd=C1052&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&lu=&brs=Y&",
+			expansionImp : "https://siape.veta.naver.com/fxview?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831332&evtcd=C1001&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&brs=Y&&eid=V810&t=i",
+			expansionClick : "https://siape.veta.naver.com/fxclick?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831332&br=3863406&evtcd=C1034&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&lu=&brs=Y&",
+			videoTracking : {
+				play : "https://siape.veta.naver.com/fxclick?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831332&br=3863407&evtcd=C1055&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&lu=&brs=Y&",
+				pause : "https://siape.veta.naver.com/fxclick?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831332&br=3863408&evtcd=C1057&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&lu=&brs=Y&",
+				soundOn : "https://siape.veta.naver.com/fxclick?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831332&br=3863409&evtcd=C1058&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&lu=&brs=Y&",
+				soundOff : "https://siape.veta.naver.com/fxclick?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831332&br=3863410&evtcd=C1059&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&lu=&brs=Y&",
+				progressTracking : [
+					"https://siape.veta.naver.com/fxview?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831333&evtcd=C1066&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&brs=Y&&eid=V810&t=i",
+					"https://siape.veta.naver.com/fxview?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831334&evtcd=C1067&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&brs=Y&&eid=V810&t=i",
+					"https://siape.veta.naver.com/fxview?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831335&evtcd=C1068&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&brs=Y&&eid=V810&t=i",
+					"https://siape.veta.naver.com/fxview?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831336&evtcd=C1069&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&brs=Y&&eid=V810&t=i"
+				]
+			},
+			noSupportClick : "https://siape.veta.naver.com/fxclick?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831337&br=3863411&evtcd=C1017&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&lu=&brs=Y&",
+		},
+		fileviewcountapi1: "" != "" ? "" : "",
+	};
+
+	info.cssSrc = "https://ssl.pstatic.net/tveta/libs/assets/css/pc/main/min/timeboard_autoplay_750.min.css?20170222";
+	info.creativeData.bannerImgSrc = "https://ssl.pstatic.net/tveta/libs/1383/1383636/5a3b88e5261294546142_20220513121349571.jpg";
+	info.creativeData.expansionStillSrc = "https://ssl.pstatic.net/tveta/libs/1383/1383636/c9790926d9cd1e2b074f_20220512185436311_1.jpg";
+	info.creativeData.noSupportImgSrc = "https://ssl.pstatic.net/tveta/libs/1383/1383636/9d8957a1903c0679e324_20220512185430961_1.jpg";
+	info.logData.noSupportImp = "https://siape.veta.naver.com/fxview?eu=EU10041888&calp=-&oj=A4YjrwVVtw%2BNgoqA00JGCvIpL9Qc8PZOj3%2BWIz3bpBrgNDN2Q%2FxScurmLIEKCWNSbtlMpbgWMSVyiXb%2BwN9aND7%2BT2BiHdOHw0KoGIKyMRRg40mLPchi3M%2BgaAF08UCUR%2BgyqeR8HKj6%2F39%2FnoRHW4%2BZRRWgUVfuUXy6CyeKBmwjecnVErAgAB3cNq01obsDUFaOOLhaTpU2EkmBxKSRO%2BaOEyi6TA3mVtcYgb%2FJkT0VBdW50ldmBKT%2FjkFHtrri&ac=8561863&src=5831337&evtcd=C1000&x_ti=1311&tb=&oid=&sid1=&sid2=&rk=2e15daf50dc20695043bd43737724998&eltts=KiChk36kFSUF5ZKnTJ1KmQ%3D%3D&brs=Y&&eid=V810&t=i",
+	info.height = 135;
+	info.width = 750;
+	info.newver = true;
+	info.darkmode = darkmode;
+	
+	info.adDiv = Da.$$("da_expwide");
+
+	autoplay = new TimeboardAutoPlay(info);
+	autoplay.initAd();
+}
+
+function expandAd() {
+	autoplay.expandAd();
+}
+
+function hideAd() {
+	autoplay.hideAd();
+}
+
+</script>
+
+
+<div id="da_timeboard">
+	<div class="content">
+		<div id="addiv" class="ad"></div>
+		<a id="link" name="link" aria-hidden="true" onclick="return false;"></a>
+	</div>
+</div>
+
+
+          </div>
+          </section>
+          <footer></footer>
+        
+      <div style="display: none;"></div></body></html>
