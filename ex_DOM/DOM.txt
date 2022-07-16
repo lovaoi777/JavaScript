@@ -4,6 +4,8 @@ DOM (Document Object Model )
 objects로 문서를 표현한다. 이들은 웹 페이지를 스크립트 또는 프로그래밍 언어에서 사용될 수있게 시켜주는 역활이다.
 
 
+
+
 노란색 Document 문서노드 
 파란색 요소노드
 초록색 속성 노드
